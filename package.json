@@ -4,7 +4,8 @@
   "description": "Proyecto de producción de un restaurante",
   "main": "index.js",
   "scripts": {
-    "start": "npm i"
+    "start": "npm i",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "keywords": [],
   "author": "",
