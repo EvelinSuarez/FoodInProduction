@@ -1,27 +1,46 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <main>
-        <div class="flex flex-wrap justify-center items-center h-60 relative">
-            <a href="administrador.html" class="bg-gray-200 p-5 m-2 rounded-lg shadow-md text-center hover:bg-gray-300">
-                Insumos
-            </a>
-            <!-- <div>Stock De Insumos</div> -->
-            <a href="jefe-cocina.html" class="bg-gray-200 p-5 m-2 rounded-lg shadow-md text-center hover:bg-gray-300">
-                Proveedors
-            </a>
-            <a href="jefe-cocina.html" class="bg-gray-200 p-5 m-2 rounded-lg shadow-md text-center hover:bg-gray-300">
-                Configuracion
-            </a>
+<body class="flex items-center justify-center w-screen h-screen">
+    <div>
+        <button class="overflow-hidden border-gray-600 rounded-full h_8 w_8 focus:outline-none focus:border-white">
+            <img class="object-cover w-full h-full" src="">
+        </button>
+        <div class="flex bg-white rounded-lg shadow-xl w-min-fit">
+            <a href="#" id="insumos" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Insumos</a>
+            <a href="#" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Proveedores</a>
+            <a href="#" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Configuración</a>
         </div>
-    </main>
+        <dialog id="modal" class="absolute p-5 rounded-lg">
+            <button id="closeModal" class="absolute p-2 top-1 right-1">X</button>
+            <ul id="listInsumos">
+                <li>Insumos</li>
+                <li>Produccion</li>
+                <li>Categorias</li>
+            </ul>
+        </dialog>
+    </div>
+    <script>
+        const modal = document.getElementById("modal")
+        const closeModal = document.getElementById("closeModal")
+        const btnInsumos = document.getElementById("insumos")
+
+        btnInsumos.addEventListener("click", () => {
+            modal.showModal()
+        })
+
+        closeModal.addEventListener("click", () => {
+            modal.close()
+        })
+
+    </script>
 </body>
 
 </html>

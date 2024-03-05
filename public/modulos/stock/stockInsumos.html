@@ -75,76 +75,80 @@
           </div>
         </div>
       </nav>
-      
-    <div class="rounded-md ">
-        <table >
+    <div class="overflow-hidden border rounded-lg max-w-fit">
+        <table class="min-w-full">
             <thead>
+               
                 <tr>
-                    <th class="px-4 py-3 border border-gray-400 text-grey-800">Codigo Articulo</th>
-                    <th class="px-4 py-3 border border-gray-400 text-grey-800">Codigo Provedor</th>
-                    <th class="px-4 py-3 border border-gray-400 text-grey-800">Nombre</th>
-                    <th class="px-4 py-3 border border-gray-400 text-grey-800">Unidad Medida</th>
-                    <th class="px-4 py-3 border border-gray-400 text-grey-800">Cantidad Actual</th>
-                    <th class="px-4 py-3 border border-gray-400 text-grey-800">Minimos</th>
-                    <th class="px-4 py-3 border border-gray-400 text-grey-800">Maximos</th>
+                    <th class="px-4 py-3 text-white bg-black ">Codigo Articulo</th>
+                    <th class="px-4 py-3 text-white bg-black ">Codigo Provedor</th>
+                    <th class="px-4 py-3 text-white bg-black ">Nombre</th>
+                    <th class="px-4 py-3 text-white bg-black ">Unidad Medida</th>
+                    <th class="px-4 py-3 text-white bg-black ">Cantidad Actual</th>
+                    <th class="px-4 py-3 text-white bg-black ">Minimos</th>
+                    <th class="px-4 py-3 text-white bg-black ">Maximos</th>
                 </tr>
-
             </thead>
             <tbody id="tblBody">
             </tbody>
         </table>
     </div>
-    <script>
-      const articulos = [
-          {
-              id: 1234,
-              idProveedor: 234235,
-              nombre: "Lo que sea",
-              unidadMedida: "kg",
-              cantidadActual: 200,
-              minimos: 20,
-              maximos: 250
-          },{
-              id: 5678,
-              idProveedor: 3452,
-              nombre: "Nose",
-              unidadMedida: "kg",
-              cantidadActual: 200,
-              minimos: 20,
-              maximos: 250
-          },{
-              id: 5678,
-              idProveedor: 3452,
-              nombre: "Nose",
-              unidadMedida: "kg",
-              cantidadActual: 200,
-              minimos: 20,
-              maximos: 250
-          },{
-              id: 5678,
-              idProveedor: 3452,
-              nombre: "Nose",
-              unidadMedida: "kg",
-              cantidadActual: 200,
-              minimos: 20,
-              maximos: 250
-          }
+    <div>
+        <button class="h-14 w-14 top-0 start-0 ..." >crear</button>
+    </div>
 
-      ]
-      const tblBody = document.getElementById("tblBody")
-      articulos.forEach((info)=>{ 
-        tblBody.innerHTML += `
+    <script>
+        const articulos = [
+            {
+                id: 1234,
+                idProveedor: 234235,
+                nombre: "Lo que sea",
+                unidadMedida: "kg",
+                cantidadActual: 200,
+                minimos: 20,
+                maximos: 250
+            },{
+                id: 5678,
+                idProveedor: 3452,
+                nombre: "Nose",
+                unidadMedida: "kg",
+                cantidadActual: 200,
+                minimos: 20,
+                maximos: 250
+            },{
+                id: 5678,
+                idProveedor: 3452,
+                nombre: "Nose",
+                unidadMedida: "kg",
+                cantidadActual: 200,
+                minimos: 20,
+                maximos: 250
+            },{
+                id: 5678,
+                idProveedor: 3452,
+                nombre: "Nose",
+                unidadMedida: "kg",
+                cantidadActual: 200,
+                minimos: 20,
+                maximos: 250
+            }
+  
+        ]
+        const tblBody = document.getElementById("tblBody")
+        articulos.forEach((info)=>{ 
+          tblBody.innerHTML += `
           <tr class="bg-gray-200">
-                <td class="px-4 py-3 border border-gray-400">${info.id}</td>
-                <td class="px-4 py-3 border border-gray-400">${info.idProveedor}</td>
-                <td class="px-4 py-3 border border-gray-400">${info.nombre}</td>
-                <td class="px-4 py-3 border border-gray-400">${info.unidadMedida}</td>
-                <td class="px-4 py-3 border border-gray-400">${info.cantidadActual}</td>
-                <td class="px-4 py-3 border border-gray-400">${info.minimos}</td>
-                <td class="px-4 py-3 border border-gray-400">${info.maximos}</td>
-          </tr>`
-      })
-    </script>
+                    <td class="px-4 py-3 border-gray-400 ">${info.id}</td>
+                    <td class="px-4 py-3 border-gray-400 ">${info.idProveedor}</td>
+                    <td class="px-4 py-3 border-gray-400 ">${info.nombre}</td>
+                    <td class="px-4 py-3 border-gray-400 ">${info.unidadMedida}</td>
+                    <td class="px-4 py-3 border-gray-400 ">${info.cantidadActual}</td>
+                    <td class="px-4 py-3 border-gray-400 ">${info.minimos}</td>
+                    <td class="px-4 py-3 border-gray-400 ">${info.maximos}</td>
+                </tr>`
+        })
+      </script>
+    
 </body>
 
 </html>
