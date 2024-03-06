@@ -1,154 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body>
-    <nav class="bg-white border-gray-200 ">
-        <div class="flex flex-wrap justify-center max-w-screen-xl p-4 mx-auto">
-          
-          <div class="justify-center hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
-              <li>
-                <a href="#" class="block px-3 py-2 bg-black rounded text md:bg-transparent md:text-red-500 md:p-0 md:dark:text-red-900 dark:bg-red-500 md:dark:bg-transparent" aria-current="page">Inicio</a>
-              </li>
-              <li>
-                <a href="" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">
-                  <select name="" id="" class="">
-                    <option value="" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:text-red-900 md:dark:hover:bg-transparent">
-                      insumos
-                    </option>
-                    <option value="">
-                      <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">Stock insumo</a>
-                    </option>
-                    <option value="">
-                      <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">Stock proveedores</a>
-                    </option>
-                    <option value="">
-                      <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">Categorias</a>
-                    </option>
-                    
-                  </select>
-                </a>
-                  
-              </li>
-              <li>
-                <a href="" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">
-                  <select name="" id="">
-    
-                    <option value="" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">
-                      <a href="#" >proveedores</a>
-                    </option>
-                    <option value="">
-                      <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">Listado</a>
-                    </option>
-                  </select>
-                </a>
-                  
-              </li>
-              <li>
-                <a href="" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">
-                  <select name="" id="">
-                    <option value="">
-                      <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">Configuracion</a>
-                    </option>
-                    <option value="">
-                      <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">Mi perfil</a>
-                    </option>
-                    <option value="">
-                      <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">Perfil Secundario</a>
-                    </option>
-                    <option value="">
-                      <a href="#" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent">Cerrar sesion</a>
-                    </option>
-                    
-                  </select>
-                </a>
-                  
-              </li>
-            </ul>
-          </div>
+  <body>
+    <nav class="bg-white border-gray-200">
+      <div class="flex flex-wrap justify-center max-w-screen-xl p-4 mx-auto">
+        <div
+          class="justify-center hidden w-full md:block md:w-auto"
+          id="navbar-dropdown"
+        >
+          <ul
+            class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block px-3 py-2 bg-black rounded text md:bg-transparent md:text-red-500 md:p-0 md:dark:text-red-900 dark:bg-red-500 md:dark:bg-transparent"
+                aria-current="page"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+              >
+                <select name="" id="" class="">
+                  <option
+                    value=""
+                    class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:text-red-900 md:dark:hover:bg-transparent"
+                  >
+                    insumos
+                  </option>
+                  <option value="">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                      >Stock insumo</a
+                    >
+                  </option>
+                  <option value="">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                      >Stock proveedores</a
+                    >
+                  </option>
+                  <option value="">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                      >Categorias</a
+                    >
+                  </option>
+                </select>
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+              >
+                <select name="" id="">
+                  <option
+                    value=""
+                    class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                  >
+                    <a href="#">proveedores</a>
+                  </option>
+                  <option value="">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                      >Listado</a
+                    >
+                  </option>
+                </select>
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+              >
+                <select name="" id="">
+                  <option value="">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                      >Configuracion</a
+                    >
+                  </option>
+                  <option value="">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                      >Mi perfil</a
+                    >
+                  </option>
+                  <option value="">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                      >Perfil Secundario</a
+                    >
+                  </option>
+                  <option value="">
+                    <a
+                      href="#"
+                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
+                      >Cerrar sesion</a
+                    >
+                  </option>
+                </select>
+              </a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    <div class="overflow-hidden border rounded-lg max-w-fit">
+      </div>
+    </nav>
+    
+    <section class="flex flex-col">
+      <article class="overflow-hidden border rounded-lg max-w-fit mx-auto">
         <table class="min-w-full">
-            <thead>
-               
-                <tr>
-                    <th class="px-4 py-3 text-white bg-black ">Codigo Articulo</th>
-                    <th class="px-4 py-3 text-white bg-black ">Codigo Provedor</th>
-                    <th class="px-4 py-3 text-white bg-black ">Nombre</th>
-                    <th class="px-4 py-3 text-white bg-black ">Unidad Medida</th>
-                    <th class="px-4 py-3 text-white bg-black ">Cantidad Actual</th>
-                    <th class="px-4 py-3 text-white bg-black ">Minimos</th>
-                    <th class="px-4 py-3 text-white bg-black ">Maximos</th>
-                </tr>
-            </thead>
-            <tbody id="tblBody">
-            </tbody>
+          <thead>
+            <tr class="border-2 border-black">
+              <th class="px-4 py-3 text-white bg-black">Codigo Articulo</th>
+              <th class="px-4 py-3 text-white bg-black">Codigo Provedor</th>
+              <th class="px-4 py-3 text-white bg-black">Nombre</th>
+              <th class="px-4 py-3 text-white bg-black">Unidad Medida</th>
+              <th class="px-4 py-3 text-white bg-black">Cantidad Actual</th>
+              <th class="px-4 py-3 text-white bg-black">Minimos</th>
+              <th class="px-4 py-3 text-white bg-black">Maximos</th>
+              <th class="px-4 py-3 text-white bg-black">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tblBody"></tbody>
         </table>
-    </div>
-    <div>
-        <button class="h-14 w-14 top-0 start-0 ..." >crear</button>
-    </div>
+      </article>
+      <button
+        class="ml-[27rem] bg-gray-400 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded my-5 max-w-fit"
+      >
+        Crear 💾
+      </button>
+      
+    </section>
 
     <script>
-        const articulos = [
-            {
-                id: 1234,
-                idProveedor: 234235,
-                nombre: "Lo que sea",
-                unidadMedida: "kg",
-                cantidadActual: 200,
-                minimos: 20,
-                maximos: 250
-            },{
-                id: 5678,
-                idProveedor: 3452,
-                nombre: "Nose",
-                unidadMedida: "kg",
-                cantidadActual: 200,
-                minimos: 20,
-                maximos: 250
-            },{
-                id: 5678,
-                idProveedor: 3452,
-                nombre: "Nose",
-                unidadMedida: "kg",
-                cantidadActual: 200,
-                minimos: 20,
-                maximos: 250
-            },{
-                id: 5678,
-                idProveedor: 3452,
-                nombre: "Nose",
-                unidadMedida: "kg",
-                cantidadActual: 200,
-                minimos: 20,
-                maximos: 250
-            }
-  
-        ]
-        const tblBody = document.getElementById("tblBody")
-        articulos.forEach((info)=>{ 
-          tblBody.innerHTML += `
-          <tr class="bg-gray-200">
-                    <td class="px-4 py-3 border-gray-400 ">${info.id}</td>
-                    <td class="px-4 py-3 border-gray-400 ">${info.idProveedor}</td>
-                    <td class="px-4 py-3 border-gray-400 ">${info.nombre}</td>
-                    <td class="px-4 py-3 border-gray-400 ">${info.unidadMedida}</td>
-                    <td class="px-4 py-3 border-gray-400 ">${info.cantidadActual}</td>
-                    <td class="px-4 py-3 border-gray-400 ">${info.minimos}</td>
-                    <td class="px-4 py-3 border-gray-400 ">${info.maximos}</td>
-                </tr>`
-        })
-      </script>
-    
-</body>
-
+      const articulos = [
+        {
+          id: 111,
+          idProveedor: 123,
+          nombre: "solomo",
+          unidadMedida: "kg",
+          cantidadActual: 150,
+          minimos: 20,
+          maximos: 250,
+          
+        },
+        {
+          id: 112,
+          idProveedor: 234,
+          nombre: "Chicharron",
+          unidadMedida: "kg",
+          cantidadActual: 50,
+          minimos: 20,
+          maximos: 60,
+        },
+        {
+          id: 113,
+          idProveedor: 345,
+          nombre: "Lechuga",
+          unidadMedida: "Und",
+          cantidadActual: 95,
+          minimos: 25,
+          maximos: 98,
+        },
+        {
+          id: 114,
+          idProveedor: 456,
+          nombre: "Zanahoria",
+          unidadMedida: "kg",
+          cantidadActual: 40,
+          minimos: 20,
+          maximos: 40,
+        },
+        {
+          id: 115,
+          idProveedor: 567,
+          nombre: "Mora",
+          unidadMedida: "kg",
+          cantidadActual: 40,
+          minimos: 20,
+          maximos: 55,
+        },
+        {
+          id: 116,
+          idProveedor: 678,
+          nombre: "Lulo",
+          unidadMedida: "kg",
+          cantidadActual: 50,
+          minimos: 20,
+          maximos: 60,
+        },
+      ];
+      const tblBody = document.getElementById("tblBody");
+      articulos.forEach((info) => {
+        tblBody.innerHTML += `
+          <tr class="bg-gray-200 border-2 border-black">
+              <td class="px-4 py-3 border-gray-400 ">${info.id}</td>
+              <td class="px-4 py-3 border-gray-400 ">${info.idProveedor}</td>
+              <td class="px-4 py-3 border-gray-400 ">${info.nombre}</td>
+              <td class="px-4 py-3 border-gray-400 ">${info.unidadMedida}</td>
+              <td class="px-4 py-3 border-gray-400 ">${info.cantidadActual}</td>
+              <td class="px-4 py-3 border-gray-400 ">${info.minimos}</td>
+              <td class="px-4 py-3 border-gray-400 ">${info.maximos}</td>
+              <td class="px-4 py-3 border-gray-400 ">
+                <button class="bg-gray-400 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"> 🗑 </button>
+                <button class="bg-gray-400 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"> 🔍 </button> 
+              </td>
+          </tr>`;
+      });
+    </script>
+  </body>
 </html>
