@@ -2,11 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio || Administracion</title>
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 <body>
   <nav class="bg-white border-gray-200 ">
     <div class="flex flex-wrap justify-center max-w-screen-xl p-4 mx-auto">
@@ -47,47 +46,31 @@
       </div>
     </div>
   </nav>
-  <script>
-    let stock
-    const optionInsumos = document.getElementById("optionInsumos")
-    optionInsumos.addEventListener("change", (e)=>{
-      stock = e.target.value
-      if(stock === "stockInsumos"){
-        location.href = "../stock/stockInsumos.html"
-      } else if(stock === "stockproveedores"){
-        location.href = "../stock/stockProveedor.html"
-      }else if(stock === "categorias"){
-        location.href = "../stock/categorias.html"
-      }
-    }
-    )
-
-    const optionProveedores = document.getElementById("optionProveedores")
-    optionProveedores.addEventListener("change", (e)=>{
-      stock = e.target.value
-      if(stock === "proveedores"){
-        location.href = "../proveedor/proveedor.html"
-      } else if(stock === "Listado"){
-        location.href = "../proveedor/listado.html"
-      }
-    }
-    )
-
-    const optionConfiguracion = document.getElementById("optionConfiguracion")
-    optionConfiguracion.addEventListener("change", (e)=>{
-      stock = e.target.value
-      if(stock === "Miperfil"){
-        location.href = "../config/miperfil.html"
-      } else if(stock === "Perfilsecundario"){
-        location.href = "../config/perfilsecundario.html"
-      }else if(stock === "Cerrarsesion"){
-        location.href = "../config/cerrarsesion.html"
-      }
-    }
-    )
-
-  </script>
-
-    
-  </body>
+    <section class="flex flex-col">
+      <article class="overflow-hidden border rounded-lg max-w-fit mx-auto">
+        <table class="min-w-full">
+          <thead>
+            <tr class="border-2 border-black">
+              <th class="px-4 py-3 text-white bg-black">Codigo Articulo</th>
+              <th class="px-4 py-3 text-white bg-black">Codigo Provedor</th>
+              <th class="px-4 py-3 text-white bg-black">Nombre</th>
+              <th class="px-4 py-3 text-white bg-black">Unidad Medida</th>
+              <th class="px-4 py-3 text-white bg-black">Cantidad Actual</th>
+              <th class="px-4 py-3 text-white bg-black">Minimos</th>
+              <th class="px-4 py-3 text-white bg-black">Maximos</th>
+              <th class="px-4 py-3 text-white bg-black">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tblBody"></tbody>
+        </table>
+      </article>
+      <button
+        class="ml-[27rem] bg-gray-400 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded my-5 max-w-fit"
+      >
+        Crear 💾
+      </button>
+    </section>
+    <script src="../../js/services/tabla.js"></script>
+    <script src="../../js/helpers/navegador.js"></script>
+</body>
 </html>

@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
-  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
   
-    <!-- component -->
-<!-- Container -->
-<div class="flex flex-wrap content-center justify-center w-full min-h-screen py-10 ">
-  
-  <!-- Login component -->
-    <!-- Login form -->
-    <div class="flex flex-wrap content-center justify-center bg-white rounded-l-md" style="width: 24rem; height: 32rem;">
-      <div class="w-72">
-        <!-- Heading -->
-        <h1 class="font-semibold text-xxl ">Guadalupe Gourmet</h1>
-        
+      <!-- component -->
+  <!-- Container -->
+  <div class="flex flex-wrap content-center justify-center w-full min-h-screen py-10 ">
+    
+    <!-- Login component -->
+      <!-- Login form -->
+      <div class="flex flex-wrap content-center justify-center bg-white rounded-l-md" style="width: 24rem; height: 32rem;">
+        <div class="w-72">
+          <!-- Heading -->
+          <h1 class="font-semibold text-xxl ">Guadalupe Gourmet</h1>
+          <!-- Form -->
+          <form class="mt-4">
+            <div class="mb-3">
+              <button type="button" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-180,19,19 focus:ring-4
+              focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2
+                dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"><a href="../public/modulos/auth/login.html">Administrador</a></button>
+            </div>
+            
+            <!-- buttons -->
+            <div class="mb-3 " >
+              <button type="button" class="flex flex-col text-red-700 hover:text-white border border-red-700 hover:bg-red-700 focus:ring-4
+              focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2
+                dark:border-red-700 dark:text-red-700 dark:hover:text-white dark:hover:bg-red-700 dark:focus:ring-red-900" flex flex-col><a href="../public/modulos/auth/login.html">Jefe de Cocina</a></button>
+            </div>
 
-        <!-- Form -->
-        <form class="mt-4">
-          <div class="mb-3">
-            <button type="button" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-180,19,19 focus:ring-4
-             focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2
-              dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Administrador</button>
-          </div>
+          </form>
+
           
-          <!-- buttons -->
-          <div class="mb-3 " >
-            <button type="button" class="flex flex-col text-red-700 hover:text-white border border-red-700 hover:bg-red-700 focus:ring-4
-             focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2
-              dark:border-red-700 dark:text-red-700 dark:hover:text-white dark:hover:bg-red-700 dark:focus:ring-red-900" flex flex-col>Jefe de Cocina</button>
-          </div>
-
-        </form>
-
-        
+          
+        </div>
         
       </div>
       
-    </div>
-    
-    
-    <!-- Login banner -->
-    <div class="flex flex-wrap content-center justify-center rounded-r-md" style="width: 34rem; height: 30rem;">
-      <video autoplay loop muted class="w-full h-full bg-center bg-no-repeat bg-cover rounded-r-md" src="VID-20240304-WA0054.mp4">
-    </div>
+      
+      <!-- Login banner -->
+      <div class="flex flex-wrap content-center justify-center rounded-r-md" style="width: 34rem; height: 30rem;">
+        <video autoplay loop muted class="w-full h-full bg-center bg-no-repeat bg-cover rounded-r-md" src="VID-20240304-WA0054.mp4">
+      </div>
 
+    </div>
+    
   </div>
+  <!-- Footer -->
+  <footer class="p-6 font-medium bg-black">
   
-</div>
+    <div class="text-center ">
+      <h2 class="text-amber-500">Lina Marcela Rendón</h2>
+      <h2 class="text-amber-500">CRA 79 # 49a 109. Sector Estadio</h2>
+      <h2 class="text-amber-500">302 2492570</h2>
+      <article class="inline-flex p-2">
+        <img src="../public/assets/facebook.webp" class="w-10 mx-2" alt="">
+        
+        <img src="../public/assets/instagram.png" class="w-10 mx-2" alt="">
+      </article>
+    </div>
+  
+  </footer> 
 
 </body>
-<!-- Footer -->
-   <footer>
-    
-      <div class="text-center">
-        <h2>Lina Marcela Rendón</h2>
-        <h2>CRA 79 # 49a 109. Sector Estadio</h2>
-        <h2>302 2492570</h2>
-      </div>
-    
-   </footer> 
+
 </html>
