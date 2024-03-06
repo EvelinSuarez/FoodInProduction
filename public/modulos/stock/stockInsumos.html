@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
+  </head>
 <body>
   <nav class="bg-white border-gray-200 ">
     <div class="flex flex-wrap justify-center max-w-screen-xl p-4 mx-auto">
@@ -48,31 +46,31 @@
       </div>
     </div>
   </nav>
-    <div class="overflow-hidden border rounded-lg max-w-fit">
+    <section class="flex flex-col">
+      <article class="overflow-hidden border rounded-lg max-w-fit mx-auto">
         <table class="min-w-full">
-            <thead>
-               
-                <tr>
-                    <th class="px-4 py-3 text-white bg-black ">Codigo Articulo</th>
-                    <th class="px-4 py-3 text-white bg-black ">Codigo Provedor</th>
-                    <th class="px-4 py-3 text-white bg-black ">Nombre</th>
-                    <th class="px-4 py-3 text-white bg-black ">Unidad Medida</th>
-                    <th class="px-4 py-3 text-white bg-black ">Cantidad Actual</th>
-                    <th class="px-4 py-3 text-white bg-black ">Minimos</th>
-                    <th class="px-4 py-3 text-white bg-black ">Maximos</th>
-                </tr>
-            </thead>
-            <tbody id="tblBody">
-            </tbody>
+          <thead>
+            <tr class="border-2 border-black">
+              <th class="px-4 py-3 text-white bg-black">Codigo Articulo</th>
+              <th class="px-4 py-3 text-white bg-black">Codigo Provedor</th>
+              <th class="px-4 py-3 text-white bg-black">Nombre</th>
+              <th class="px-4 py-3 text-white bg-black">Unidad Medida</th>
+              <th class="px-4 py-3 text-white bg-black">Cantidad Actual</th>
+              <th class="px-4 py-3 text-white bg-black">Minimos</th>
+              <th class="px-4 py-3 text-white bg-black">Maximos</th>
+              <th class="px-4 py-3 text-white bg-black">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tblBody"></tbody>
         </table>
-    </div>
-    <div>
-        <button class="h-14 w-14 top-0 start-0 ..." >crear</button>
-    </div>
-
+      </article>
+      <button
+        class="ml-[27rem] bg-gray-400 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded my-5 max-w-fit"
+      >
+        Crear 💾
+      </button>
+    </section>
     <script src="../../js/services/tabla.js"></script>
     <script src="../../js/helpers/navegador.js"></script>
-    
 </body>
-
 </html>
