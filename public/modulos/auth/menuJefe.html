@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio || Administracion</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body class="flex items-center justify-center w-screen h-screen">
-    <div>
-        <button class="overflow-hidden border-gray-600 rounded-full h_8 w_8 focus:outline-none focus:border-white">
-            <img class="object-cover w-full h-full" src="">
-        </button>
-        <div class="flex bg-white rounded-lg shadow-xl w-min-fit">
-            <a href="#" id="insumos" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Insumos</a>
-            <a href="#" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Proveedores</a>
-            <a href="#" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Configuración</a>
-        </div>
-        <dialog id="modal" class="absolute p-5 rounded-lg">
-            <button id="closeModal" class="absolute p-2 top-1 right-1">X</button>
-            <ul id="listInsumos">
-                <li>Insumos</li>
-                <li>Produccion</li>
-                <li>Categorias</li>
-            </ul>
-        </dialog>
+<body>
+  <nav class="bg-white border-gray-200 ">
+    <div class="flex flex-wrap justify-center max-w-screen-xl p-4 mx-auto">
+      
+      <div class="justify-center hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+          <li>
+            <a href="../alerta/alerta.html" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Inicio</a>
+          </li>
+          <li>
+            <a href="../ficha/tecnica.html" class="px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Ficha tecnica</a>
+          </li> 
+          <li>
+              <select class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0" id="optionInsumos">
+                <option selected>Insumos</option>
+                <option value="stockInsumos" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Stock insumo</option>
+                <option value="stockproduccion" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Stock produccion</option>
+                <option value="categorias" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Categorias</option>  
+              </select>
+          </li>
+          <li>
+            <select class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0" id="optionProduccion">
+              <option selected>produccion</option>
+              <option value="produccion" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Produccion</option>
+              <option value="Listado" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Listado</option>
+            </select>
+              
+          </li>
+          <li>
+            <select class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0" id="optionConfiguracion">
+              <option selected>Configuracion</option>
+              <option value="Miperfil" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Mi perfil</option>
+              <option value="CerrarSesion" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Cerrar sesion</option>  
+            </select>              
+          </li>
+        </ul>
+      </div>
     </div>
-    <script>
-        const modal = document.getElementById("modal")
-        const closeModal = document.getElementById("closeModal")
-        const btnInsumos = document.getElementById("insumos")
+  </nav>
+  <!-- <script>
+    let stock
+    const optionInsumos = document.getElementById("optionInsumos")
+    optionInsumos.addEventListener("change", (e)=>{
+      stock = e.target.value
+      if(stock === "stockInsumos"){
+        location.href = "../stock/stockInsumos.html"
+      } else if(stock === "stockproduccion"){
+        location.href = "../stock/stockProduccion.html"
+      }else if(stock === "categorias"){
+        location.href = "../stock/categorias.html"
+      }
+    }
+    )
 
-        btnInsumos.addEventListener("click", () => {
-            modal.showModal()
-        })
+    const optionProduccion= document.getElementById("optionProduccion")
+    optionProduccion.addEventListener("change", (e)=>{
+      stock = e.target.value
+      if(stock === "produccion"){
+        location.href = "../produccion/produccion.html"
+      } else if(stock === "Listado"){
+        location.href = "../produccion/listado.html"
+      }
+    }
+    )
 
-        closeModal.addEventListener("click", () => {
-            modal.close()
-        })
+    const optionConfiguracion = document.getElementById("optionConfiguracion")
+    optionConfiguracion.addEventListener("change", (e)=>{
+      stock = e.target.value
+      if(stock === "Miperfil"){
+        location.href = "../config/miperfil.html"
+      } else if(stock === "Perfilsecundario"){
+        location.href = "../config/perfilsecundario.html"
+      }else if(stock === "Cerrarsesion"){
+        location.href = "../config/cerrarsesion.html"
+      }
+    }
+    )
 
-    </script>
-</body>
+  </script> -->
 
+    
+  </body>
 </html>
