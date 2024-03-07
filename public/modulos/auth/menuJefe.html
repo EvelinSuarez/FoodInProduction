@@ -13,26 +13,53 @@
         <button class="overflow-hidden border-gray-600 rounded-full h_8 w_8 focus:outline-none focus:border-white">
             <img class="object-cover w-full h-full" src="">
         </button>
-        <div class="flex bg-white rounded-lg shadow-xl w-min-fit">
+        <div class="bg-white rounded-lg shadow-xl w-min-fit">
             <a href="#" id="insumos" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Insumos</a>
-            <a href="#" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Proveedores</a>
-            <a href="#" class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Configuración</a>
+            <a href="#" id="proveedores"
+                class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Proveedores</a>
+            <a href="#" id="configuracion"
+                class="px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Configuración</a>
         </div>
         <dialog id="modal" class="absolute p-5 rounded-lg">
             <button id="closeModal" class="absolute p-2 top-1 right-1">X</button>
-            <ul id="listInsumos">
-                <li>Insumos</li>
-                <li>Produccion</li>
-                <li>Categorias</li>
-            </ul>
+
         </dialog>
     </div>
     <script>
-        const modal = document.getElementById("modal")
+        const btnProveedores = document.getElementById("proveedores")
+        const btnConfiguracion = document.getElementById("configuracion")
         const closeModal = document.getElementById("closeModal")
         const btnInsumos = document.getElementById("insumos")
+        const modal = document.getElementById("modal")
 
         btnInsumos.addEventListener("click", () => {
+            modal.innerHTML += `
+            <ul id="listInsumos">
+                <li>Insumos</li>
+                <li>Proveedores</li>
+                <li>Configuración</li>
+            </ul>
+            `
+            modal.showModal()
+        })
+
+        btnProveedores.addEventListener("click", () => {
+            modal.innerHTML += `
+            <ul id="listaProveedores">
+                <li>Tipo Proveedores</li>
+                <li>Listado</li>
+            </ul>
+            `
+            modal.showModal()
+        })
+
+        btnConfiguracion.addEventListener("click", () => {
+            modal.innerHTML += `
+            <ul id="listConfiguracion">
+                <li>Mi perfil</li>
+                <li>Cerrar sesion</li>
+            </ul>
+            `
             modal.showModal()
         })
 
