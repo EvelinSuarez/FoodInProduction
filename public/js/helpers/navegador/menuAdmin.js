@@ -3,11 +3,11 @@ const optionInsumos = document.getElementById("optionInsumos");
 optionInsumos.addEventListener("change", (e) => {
   stock = e.target.value;
   if (stock === "stockInsumos") {
-    location.href = "../stock/stockInsumos.html";
+    location.href = "../../modulos/stock/stockInsumos.html";
   } else if (stock === "stockproveedores") {
-    location.href = "../stock/stockProveedor.html";
+    location.href = "../../modulos/stock/stockProveedor.html";
   } else if (stock === "categorias") {
-    location.href = "../stock/categorias.html";
+    location.href = "../../modulos/stock/categorias.html";
   }
 });
 
@@ -15,9 +15,9 @@ const optionProveedores = document.getElementById("optionProveedores");
 optionProveedores.addEventListener("change", (e) => {
   stock = e.target.value;
   if (stock === "proveedores") {
-    location.href = "../proveedor/proveedor.html";
+    location.href = "../../modulos/proveedor/proveedor.html";
   } else if (stock === "Listado") {
-    location.href = "../proveedor/listado.html";
+    location.href = "../../modulos/proveedor/listado.html";
   }
 });
 
@@ -25,10 +25,10 @@ const optionConfiguracion = document.getElementById("optionConfiguracion");
 optionConfiguracion.addEventListener("change", (e) => {
   stock = e.target.value;
   if (stock === "Miperfil") {
-    location.href = "../config/miperfil.html";
-  } else if (stock === "Perfilsecundario") {
-    location.href = "../config/perfilsecundario.html";
-  } else if (stock === "Cerrarsesion") {
-    location.href = "../config/cerrarsesion.html";
+    location.href = "../../modulos/config/miperfil.html";
+  } else if (stock === "PerfilSecundario") {
+    location.href = "../../modulos/config/secundario.html";
+  } else if (stock === "CerrarSesion") {
+    location.href = "../../index.html";
   }
 });
