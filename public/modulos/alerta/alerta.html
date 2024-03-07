@@ -8,117 +8,40 @@
   </head>
 
   <body>
-    <nav class="bg-white">
-      <div class="flex flex-wrap justify-center p-4 mx-auto min-w-screen">
-        <div
-          class="justify-center hidden w-full md:block md:w-auto"
-          id="navbar-dropdown"
-        >
-          <ul
-            class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
-          >
+    <nav class="bg-white border-gray-200 ">
+      <div class="flex flex-wrap justify-center max-w-screen-xl p-4 mx-auto">
+        
+        <div class="justify-center hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul class="flex flex-col p-4 mt-4 font-medium border border-gray-100 rounded-lg md:p-0 bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
             <li>
-              <a
-                href="#"
-                class="block px-3 py-2 bg-black rounded text md:bg-transparent md:text-red-500 md:p-0 md:dark:text-red-900 dark:bg-red-500 md:dark:bg-transparent"
-                aria-current="page"
-                >Inicio</a
-              >
+              <a href="../alerta/alerta.html" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Inicio</a>
             </li>
             <li>
-              <a
-                href=""
-                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-              >
-                <select name="" id="" class="">
-                  <option
-                    value=""
-                    class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:text-red-900 md:dark:hover:bg-transparent"
-                  >
-                    insumos
-                  </option>
-                  <option value="">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                      >Stock insumo</a
-                    >
-                  </option>
-                  <option value="">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                      >Stock proveedores</a
-                    >
-                  </option>
-                  <option value="">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                      >Categorias</a
-                    >
-                  </option>
-                </select>
-              </a>
+              <a href="../ficha/tecnica.html" class=" px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Ficha tecnica</a>
             </li>
             <li>
-              <a
-                href=""
-                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-              >
-                <select name="" id="">
-                  <option
-                    value=""
-                    class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                  >
-                    <a href="#">proveedores</a>
-                  </option>
-                  <option value="">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                      >Listado</a
-                    >
-                  </option>
+                <select class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent        md:border-0 md:hover:text-red-900 md:p-0" id="optionInsumos">
+                  <option selected>Insumos</option>
+                  <option value="stockInsumos" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Stock insumo</option>
+                  <option value="stockproveedores" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Stock proveedores</option>
+                  <option value="categorias" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Categorias</option>  
                 </select>
-              </a>
             </li>
             <li>
-              <a
-                href=""
-                class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-              >
-                <select name="" id="">
-                  <option value="">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                      >Configuracion</a
-                    >
-                  </option>
-                  <option value="">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                      >Mi perfil</a
-                    >
-                  </option>
-                  <option value="">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                      >Perfil Secundario</a
-                    >
-                  </option>
-                  <option value="">
-                    <a
-                      href="#"
-                      class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0 dark:textbg-black md:dark:hover:text-red-900 dark:hover:bg-gray-700 dark:hover:textbg-black md:dark:hover:bg-transparent"
-                      >Cerrar sesion</a
-                    >
-                  </option>
-                </select>
-              </a>
+              <select class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent        md:border-0 md:hover:text-red-900 md:p-0" id="optionProveedores">
+                <option selected>proveedores</option>
+                <option value="proveedores" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Provedores</option>
+                <option value="Listado" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Listado</option>
+              </select>
+                
+            </li>
+            <li>
+              <select class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent        md:border-0 md:hover:text-red-900 md:p-0" id="optionConfiguracion">
+                <option selected>Configuracion</option>
+                <option value="Miperfil" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Mi perfil</option>
+                <option value="PerfilSecundario" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Perfil secundaria</option>
+                <option value="CerrarSesion" class="block px-3 py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-900 md:p-0">Cerrar sesion</option>  
+              </select>              
             </li>
           </ul>
         </div>
@@ -128,6 +51,7 @@
       <h1 class="my-4 text-2xl font-black">Notificación de alertas</h1>
       <section class="flex flex-col gap-5 m-12" id="alerts"></section>
     </main>
+    <script src="../../js/helpers/navegador.js"></script>
     <script src="../../js/helpers/alerts.helper.js"></script>
   </body>
 </html>
