@@ -6,20 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body>
-  <!-- Container -->
-  <main class="flex flex-wrap items-center justify-around w-screen h-screen py-10">
-    <!-- Login form -->
-    <section class="flex flex-col flex-wrap content-center justify-center bg-white rounded-l-md">
+<body class="w-screen h-screen">
+  <main class="flex items-center justify-between">
+    <section class="flex flex-col flex-wrap items-center justify-center bg-white rounded-l-md">
         <!-- Heading -->
-        <h1 class="my-4 text-6xl font-semibold">Guadalupe <br> Gourmet</h1>
-        <article class="flex flex-col"> 
+        <h1 class="my-4 text-center text-6xl font-semibold">Guadalupe <br> Gourmet</h1>
+        <article class="flex flex-col items-center"> 
           <button type="button"
               class="w-fit my-4 text-red-700 hover:text-white border border-red-700 hover:bg-red-700 focus:ring-4
               focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2
-                dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"><a
+                dark:border-red-700 dark:text-red-700 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"><a
                 href="../public/modulos/auth/login.html">Administrador</a></button>
           <button type="button"
               class="w-fit my-4 text-red-700 hover:text-white border border-red-700 hover:bg-red-700 focus:ring-4
@@ -28,12 +27,15 @@
                 href="../public/modulos/auth/login.html">Jefe de Cocina</a></button>
         </article>
     </section>
-    <!-- Login video -->
-    <video autoplay loop muted class="block rounded h-[500px]"
-    src="./assets/VID-20240304-WA0054.mp4">
+    <article class="overflow-hidden w-6/12 h-[620px]">
+      <video class="">
+        <source
+        autoplay loop muted src="./assets/VID-20240304-WA0054.mp4"
+         type="video/mp4">
+      </video>
+    </article>
   </main>
-  <!-- Footer -->
-  <footer class="p-6 font-medium bg-black h-fit">
+  <footer class="p-6 font-medium bg-black">
     <div class="text-center">
       <h2 class="text-amber-500">Lina Marcela Rendón</h2>
       <h2 class="text-amber-500">CRA 79 # 49a 109. Sector Estadio</h2>
