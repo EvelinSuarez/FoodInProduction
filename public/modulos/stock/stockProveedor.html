@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio || Administracion</title>
+    <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -107,6 +106,32 @@
         </div>
       </div>
     </nav>
-    <script src="../../js/helpers/navegador.js"></script>
+    <section class="flex flex-col">
+      <article class="mx-auto overflow-hidden border rounded-lg max-w-fit">
+        <table class="min-w-full">
+          <thead>
+            <tr class="border-2 border-black">
+              <th class="px-4 py-3 text-white bg-black">Codigo Proveedor</th>
+              <th class="px-4 py-3 text-white bg-black">Codigo Articulo</th>
+              <th class="px-4 py-3 text-white bg-black">Nombre completo</th>
+              <th class="px-4 py-3 text-white bg-black">Cedula</th>
+              <th class="px-4 py-3 text-white bg-black">Empresa</th>
+              <th class="px-4 py-3 text-white bg-black">Costo</th>
+              <th class="px-4 py-3 text-white bg-black">Fecha pedido</th>
+              <th class="px-4 py-3 text-white bg-black">Fecha entrega</th>
+              <th class="px-4 py-3 text-white bg-black">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tblBody"></tbody>
+        </table>
+      </article>
+      <button
+        class="ml-[27rem] bg-gray-400 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded my-5 max-w-fit"
+      >
+        Crear 💾
+      </button>
+    </section>
+    <script src="../../js/services/tableProveedores.js" type="module"></script>
+    <script src="../../js/helpers/navegador/menuAdmin.js"></script>
   </body>
 </html>
