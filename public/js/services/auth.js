@@ -1,26 +1,26 @@
 const users = [
-    { email: 'administrador', password: '123', role:1 },
-    { email: 'jefecocina', password: '456', role:2 },
-  ];
-  let role = 0
-  
-  const formSignIn = document.getElementById("formSignIn")
-  const rolUsuario = document.getElementById("rolUsuario")
+  { email: 'administrador', password: '123', role: 1 },
+  { email: 'jefecocina', password: '456', role: 2 }
+]
+let role = 0
 
-  rolUsuario.addEventListener("change",(e)=>{
-    role = parseInt(e.target.value)
-  })
+const formSignIn = document.getElementById('formSignIn')
+const rolUsuario = document.getElementById('rolUsuario')
 
-  formSignIn.addEventListener("submit", (e) => {
-    e.preventDefault()
-    // const user = formSignIn["user"].value
-    const password = formSignIn["password"].value
-  
-    const verify = users.find((element) => element.role === role && element.password === password)
-  
-    if (verify.role === 1) {
-      window.location = './menuadmin.html';
-    } else if(verify.role === 2){
-      window.location = './menuJefe.html';
-    }
-  })
+rolUsuario.addEventListener('change', (e) => {
+  role = parseInt(e.target.value)
+})
+
+formSignIn.addEventListener('submit', (e) => {
+  e.preventDefault()
+  // const user = formSignIn["user"].value
+  const password = formSignIn.password.value
+
+  const verify = users.find((element) => element.role === role && element.password === password)
+
+  if (verify.role === 1) {
+    window.location = './menuadmin.html'
+  } else if (verify.role === 2) {
+    window.location = './menuJefe.html'
+  }
+})
