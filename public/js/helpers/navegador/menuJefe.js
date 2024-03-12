@@ -4,20 +4,20 @@ optionInsumos.addEventListener("change", (e) => {
   stock = e.target.value;
   if (stock === "stockInsumos") {
     location.href = "../stock/stockInsumos.html";
-  } else if (stock === "stockproveedores") {
-    location.href = "../stock/stockProveedor.html";
+  } else if (stock === "stockproduccion") {
+    location.href = "../stock/stockProduccion.html";
   } else if (stock === "categorias") {
     location.href = "../stock/categorias.html";
   }
 });
 
-const optionProveedores = document.getElementById("optionProveedores");
-optionProveedores.addEventListener("change", (e) => {
+const optionProduccion = document.getElementById("optionProduccion");
+optionProduccion.addEventListener("change", (e) => {
   stock = e.target.value;
-  if (stock === "proveedores") {
-    location.href = "../proveedor/proveedor.html";
+  if (stock === "produccion") {
+    location.href = "../produccion/produccion.html";
   } else if (stock === "Listado") {
-    location.href = "../proveedor/listado.html";
+    location.href = "../produccion/listado.html";
   }
 });
 
