@@ -29,6 +29,6 @@ optionConfiguracion.addEventListener("change", (e) => {
   } else if (stock === "PerfilSecundario") {
     location.href = "../../modulos/config/secundario.html";
   } else if (stock === "CerrarSesion") {
-    location.href = "../../modulos/index.html";
+    location.href = "../../../public/index.html";
   }
 });
