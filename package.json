@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm i",
     "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "git": "git fetch origin develop && git pull origin develop"
+    "git": "git checkout develop && git fetch origin develop && git pull origin develop"
   },
   "keywords": [],
   "author": "",
