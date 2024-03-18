@@ -4,54 +4,56 @@
 <head >
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <title>Inicio || Guafalupe Gourmet</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-lime-600"> <!-- component -->
-  <!-- Container -->
-  <div class="flex flex-wrap content-center justify-center w-full min-h-screen py-10 ">
-    
-    <!-- Login form -->
-    <div class="flex flex-wrap content-center justify-center bg-white rounded-l-md"
-      style="width: 40rem; height: 35rem;">
-      <div class="w-72">
-        
-        <!-- Heading -->
-        
-        <h1 class="justify-center my-20 text-6xl font-semibold text-center text-black mx-35 ">Guadalupe <br> Gourmet</h1>
-        <article class="flex flex-col items-center"> 
-        <!-- Form -->
-        <form class="mt-4">
-          <div class="mb-4">
-            
-            
-          <!-- buttons -->
-          
-            <button type="button"
-              class="px-20 py-3 mb-2 text-sm font-medium text-center text-white bg-red-700 border border-red-700 rounded-lg hover:text-red-700 hover:bg-white focus:ring-4 focus:outline-none focus:ring-red-700 me-1 dark:border-red-700 dark:text-red-700 dark:hover:text-white dark:hover:bg-red-700 dark:focus:ring-red-900"><a
-                href="../public/modulos/auth/login.html">Iniciar</a></button>
-          </div>
-         
-        </form>
-
-      </div>
-
-    </div>
-
-
-    <!-- Login banner -->
-    
-    <div class="flex flex-wrap content-center justify-center rounded-r-md" style="width: 55rem; height: 35rem;" >
-      <video autoplay loop muted class="w-full h-full bg-white bg-cover rounded-r-md"
-        src="../public/assets/VID-20240304-WA0054_resized.mp4">
-    </div>
-    
-</div>
-
-  </div>
-  <!-- Footer -->
-  <footer class="flex flex-wrap p-6 font-medium bg-black ">
+<body class="bg-red-900 bg-fixed bg-cover grid grid-cols-12 h-screen w-screen">
+  
+  <main class="col-span-12">
+    <section class="flex items-center justify-between">
+      <!-- <div class="absolute w-full h-1/2 -z-10 bg-green-900"> </div> -->
+      <form id="formSignIn" class="p-12 mx-40 text-center rounded-lg shadow-lg bg-white">
+        <picture>
+          <img
+            src="../public/assets/guadalupe2.jpg"
+            class="w-24 mx-auto rounded"
+            alt="img"
+          />
+        </picture>
+        <h1 class="my-5 text-xl">Iniciar sesión</h1>
+        <label class="block my-2">
+          <select
+            class="block w-full p-4 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+            id="rolUsuario"
+          >
+            <option selected>Seleccione un usuario</option>
+            <option value="1">Administrador</option>
+            <option value="2">Jefe cocina</option>
+          </select>
+        </label>
+        <label class="block my-2">
+          <input
+            type="password"
+            placeholder="contraseña"
+            id="password"
+            class="block w-full p-4 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
+            required
+          />
+        </label>
+        <a class="block text-blue-600">¿Olvidaste la contraseña?</a>
+        <button
+          class="w-1/2 my-4 bg-green-900 p-3 rounded text-white hover:bg-green-800"
+        >
+          Ingresar
+        </button>
+      </form>
+      <video autoplay loop muted class="block rounded w-1/2" src="./assets/VID-20240304-WA0054_resized.mp4" ></video>
+    </section>
+    <!-- Login video -->
+  </main>
+  
+  <footer class="col-span-12 min-h-56 flex flex-wrap p-6 font-medium bg-black rounded">
 
     <div class="p-4 column">
       <h2 class="text-amber-500">Esteban Hernandez Florez</h2>
@@ -84,7 +86,9 @@
     </div>
 
   </footer>
+  <script src=""></script>
+  <script src="./js/services/auth.js"></script>
+
 
 </body>
 
-</html>

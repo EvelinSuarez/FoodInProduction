@@ -19,8 +19,10 @@ formSignIn.addEventListener('submit', (e) => {
   const verify = users.find((element) => element.role === role && element.password === password)
 
   if (verify.role === 1) {
-    window.location = './menuadmin.html'
+    console.log(1);
+    window.location = '../public/modulos/auth/menuadmin.html'
   } else if (verify.role === 2) {
-    window.location = './menuJefe.html'
+    console.log(2);
+    window.location = '../public/modulos/auth/menuJefe.html'
   }
 })
